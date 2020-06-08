@@ -13,6 +13,8 @@ pipeline:
       - npm i redis --save
       - npm test
 
+        #repo: quay.io/redis
+
   publish-redis:
     image: plugins/docker
     dockerfile: ./redis/Dockerfile
@@ -21,6 +23,7 @@ pipeline:
     tags: [latest, v2]
     secrets: [ docker_username, docker_password ]
 
+  repo: quay.io/frontend
   publish-frontend:
     image: plugins/docker
     dockerfile: ./frontend/Dockerfile
