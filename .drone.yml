@@ -13,7 +13,6 @@ pipeline:
       - npm i redis --save
       - npm test
 
-        #repo: quay.io/redis
 
   publish-redis:
     image: plugins/docker
