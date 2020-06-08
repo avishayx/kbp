@@ -14,7 +14,7 @@ pipeline:
       - npm test
 
   repo: quay.io/asebban/frontend
-        
+
   publish-redis:
     image: plugins/docker
     dockerfile: ./redis/Dockerfile
