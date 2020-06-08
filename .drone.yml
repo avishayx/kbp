@@ -12,7 +12,7 @@ pipeline:
       - cd frontend
       - npm i redis --save
       - npm test
-
+   
   repo: quay.io/asebban/frontend
 
   publish-redis:
